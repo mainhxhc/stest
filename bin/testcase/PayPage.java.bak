@@ -1,0 +1,35 @@
+package testcase;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import task.WebDriverWrapper;
+
+public class PayPage {
+	//支付宝支付
+	public static WebElement ali (WebDriver dr){
+			
+			WebElement el =null;
+			try {
+				el = dr.findElement(By.xpath("//*[@id='alipayBankList']/div/ul/li/input"));
+			} catch (Exception e) {
+				WebDriverWrapper.screenShot(dr, "");
+			}	
+			return el;
+		}
+	//支付确认页面
+	public static WebElement pay (WebDriver dr){
+		
+		WebElement el =null;
+		try {
+			el = dr.findElement(By.xpath("/html/body/div[5]/div[3]/a/img"));
+		} catch (Exception e) {
+			WebDriverWrapper.screenShot(dr, "");
+		}	
+		return el;
+	 }
+	
+	
+
+}

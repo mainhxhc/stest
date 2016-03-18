@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/testdgweb/!svn/ver/1/test-output/old/testsxdg2
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/testdgweb/!svn/ver/1/test-output/old/testsxdg2/index.html
+END
+main.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/testdgweb/!svn/ver/1/test-output/old/testsxdg2/main.html
+END
+com.sxdg.Ttest.properties
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/testdgweb/!svn/ver/1/test-output/old/testsxdg2/com.sxdg.Ttest.properties
+END
+reporter-output.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/testdgweb/!svn/ver/1/test-output/old/testsxdg2/reporter-output.html
+END
+toc.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/testdgweb/!svn/ver/1/test-output/old/testsxdg2/toc.html
+END
+testng.xml.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/testdgweb/!svn/ver/1/test-output/old/testsxdg2/testng.xml.html
+END
+classes.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/testdgweb/!svn/ver/1/test-output/old/testsxdg2/classes.html
+END
+groups.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/testdgweb/!svn/ver/1/test-output/old/testsxdg2/groups.html
+END
+methods-not-run.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/testdgweb/!svn/ver/1/test-output/old/testsxdg2/methods-not-run.html
+END
+methods.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/testdgweb/!svn/ver/1/test-output/old/testsxdg2/methods.html
+END
+methods-alphabetical.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/testdgweb/!svn/ver/1/test-output/old/testsxdg2/methods-alphabetical.html
+END

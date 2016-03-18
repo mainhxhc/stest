@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage
+END
+LoginPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/LoginPage.java
+END
+ProductListPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/ProductListPage.java
+END
+WarpPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/WarpPage.java
+END
+OrderPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/OrderPage.java
+END
+CommonEl.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/CommonEl.java
+END
+HomePage.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/HomePage.java
+END
+PayPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/PayPage.java
+END
+PayChoicePage.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/PayChoicePage.java
+END
+OrderSuccessPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/OrderSuccessPage.java
+END
+WaitPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/WaitPage.java
+END
+KdxyLogin.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/KdxyLogin.java
+END
+MobilePage.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/MobilePage.java
+END
+UserOrderPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/UserOrderPage.java
+END
+GoodsPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/GoodsPage.java
+END
+ContractPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/ContractPage.java
+END
+OrderListPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/testdgweb/!svn/ver/1/src/elements/sxdgPage/OrderListPage.java
+END

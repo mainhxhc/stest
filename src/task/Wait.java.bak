@@ -1,0 +1,17 @@
+package task;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+import elements.WaitPage;
+
+public class Wait {
+	//鼠标停留在element的位置
+	public   static  void  wait(WebDriver dr, WebElement el){
+		Actions builder =new Actions(dr); 
+		builder.moveToElement(el).perform();
+		
+	}
+
+}

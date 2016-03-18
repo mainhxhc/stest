@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testsxdg2]">
+  <test name="com.sxdg.Ttest(failed)">
+    <classes>
+      <class name="com.sxdg.Ttest">
+        <methods>
+          <include name="test4"/>
+        </methods>
+      </class> <!-- com.sxdg.Ttest -->
+    </classes>
+  </test> <!-- com.sxdg.Ttest(failed) -->
+</suite> <!-- Failed suite [testsxdg2] -->

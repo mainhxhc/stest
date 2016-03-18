@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/testdgweb/!svn/ver/1/src/com/ai/common
+END
+LoginSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/testdgweb/!svn/ver/1/src/com/ai/common/LoginSession.java
+END
+IoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/testdgweb/!svn/ver/1/src/com/ai/common/IoAction.java
+END
+GetAcaptcha.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/testdgweb/!svn/ver/1/src/com/ai/common/GetAcaptcha.java
+END

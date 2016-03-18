@@ -1,0 +1,58 @@
+8
+
+dir
+1
+http://192.168.198.130:9999/svn/testdgweb/src/com/sxdg
+http://192.168.198.130:9999/svn/testdgweb
+
+
+
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fcef53c4-6d9c-4fc6-b174-f070536cac4a
+
+Test1.java.bak
+file
+
+
+
+
+2015-04-01T08:07:50.342000Z
+69a92171dbb770b4d48ad46eaf286bfa
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+Ttest.java
+file
+
+
+
+
+2015-04-01T08:07:50.339000Z
+10bdaa59eb78e8fc47abb9b59cf220de
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+page
+dir
+
+task
+dir
+

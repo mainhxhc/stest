@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" parallel="tests">
+  <parameter name="excel" value="E:/project/testsxdg/src/com/ai/excel/Contract.xls"/>
+  <parameter name="url" value="http://www.10010fj.cn/ceshiweb/wo/broadBand!loginIndex.action"/>
+  <parameter name="jsessiond" value="1bmsJJSDvcd8SXg0Hvvzq4Vmk78rgvKy1t3ZZnJXFBHx5c2tTV11!-1702033809"/>
+  <test name="test5(failed)" parallel="tests">
+    <parameter name="excel" value="E:/project/testsxdg/src/com/ai/excel/Contract.xls"/>
+    <parameter name="url" value="http://www.10010fj.cn/ceshiweb/wo/broadBand!loginIndex.action"/>
+    <parameter name="jsessiond" value="1bmsJJSDvcd8SXg0Hvvzq4Vmk78rgvKy1t3ZZnJXFBHx5c2tTV11!-1702033809"/>
+    <classes>
+      <class name="com.sxdg.Ttest">
+        <methods>
+          <include name="test4" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.sxdg.Ttest -->
+    </classes>
+  </test> <!-- test5(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

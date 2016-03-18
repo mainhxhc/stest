@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/testdgweb/!svn/ver/1/test-output/testsxdg2
+END
+com.sxdg.Ttest.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/testdgweb/!svn/ver/1/test-output/testsxdg2/com.sxdg.Ttest.html
+END
+com.sxdg.Ttest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/testdgweb/!svn/ver/1/test-output/testsxdg2/com.sxdg.Ttest.xml
+END
+testng-failed.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/testdgweb/!svn/ver/1/test-output/testsxdg2/testng-failed.xml
+END

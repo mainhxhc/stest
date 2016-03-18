@@ -1,0 +1,13 @@
+package task;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class StartBrower {
+	public static WebDriver start(WebDriver dr,String url){
+		System.setProperty("webdriver.chrome.driver","D:/自动化/下载文件/chromedriver.exe");
+		dr = new ChromeDriver();
+		dr.get(url);
+		return dr;
+	}	
+}

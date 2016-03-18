@@ -1,0 +1,49 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >  
+  
+<suite name="Suite1"  parallel="tests" thread-count="5">  
+<!-- 
+<test name="test1">   
+
+    <classes>  
+        <class name="testcase.Wok"></class> 
+      	<parameter name="excel" value="d:/1.xls"/>
+      	<parameter name="url" value="http://130.38.27.113:7090/ceshiweb/home!index.action"/>
+      	<parameter name="jsessiond" value="1bmsJJSDvcd8SXg0Hvvzq4Vmk78rgvKy1t3ZZnJXFBHx5c2tTV11!-1702033809"/>
+   		<parameter name="key" value="123@qq.com"/>
+    </classes>  
+</test>  
+
+<test name="test2">   
+ 
+    <classes>  
+        <class name="testcase.Shangwk"></class>   
+        <parameter name="excel" value="d:/2.xls"/>    	
+      	<parameter name="url" value="http://www.10010fj.cn/home!index.action"/>
+      	<parameter name="jsessiond" value="TtndJqSJG1pJTVKJL8sNzZT0yGjv2Np5W9RS66hJ2Td1Yd7JJdhy!2076772183"/>
+   		<parameter name="key" value="123@qq.com"/>
+    </classes>  
+</test>  
+  
+<test name="test3">  
+ 
+    <classes>  
+        <class name="testcase.Contract"></class> 
+      	<parameter name="excel" value="d:/3.xls"/>
+      	<parameter name="url" value="http://www.10010fj.cn/wo/broadBand!loginIndex.action"/>
+      	<parameter name="jsessiond" value="LmnCJk9NTJY4SG2BMSWcF1qCbcGfB2MhwMz13vgC0FpTYKvsJNGl!1749632939"/>
+   		<parameter name="key" value="059107501653"/>
+    </classes>  
+</test>  
+
+  -->
+ 
+ <test name="test5">   
+ 
+    <classes>  
+        <class name="com.sxdg.Ttest"></class>   
+       	<parameter name="excel" value="E:/project/testsxdg/src/com/ai/excel/Contract.xls"/>
+      	<parameter name="url" value="http://www.10010fj.cn/ceshiweb/wo/broadBand!loginIndex.action"/>
+      	<parameter name="jsessiond" value="1bmsJJSDvcd8SXg0Hvvzq4Vmk78rgvKy1t3ZZnJXFBHx5c2tTV11!-1702033809"/>
+    </classes>  
+</test>  
+</suite>  

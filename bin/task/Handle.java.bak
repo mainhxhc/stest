@@ -1,0 +1,36 @@
+package task;
+
+import java.util.Set;
+
+import org.openqa.selenium.WebDriver;
+
+public class Handle {
+
+	public static WebDriver newdr(WebDriver dr, String windowTitle){
+	 String currentHandle = dr.getWindowHandle();  //获取当前窗口句柄     
+	    Set<String> handles = dr.getWindowHandles();  //获取所有窗口句柄
+	    try {
+			 	
+	   	 for (String s2 : handles) {
+	   		Thread.sleep(3000);  //获取新窗口句柄时，需要增加延时，防止由于打开新窗口 句柄还没出来就去找了
+					if (s2.equals(currentHandle))
+						continue;
+					else {
+						dr.switchTo().window(s2);
+						if (dr.getTitle().contains(windowTitle)) {
+							dr.switchTo().window(s2);		
+							
+							break;
+						} else
+							continue;
+					}
+				}
+			} catch (Exception e) {
+				// TODO: handle exception
+				System.out.println("333333333333");
+			}
+		return dr;
+		
+			
+}
+}

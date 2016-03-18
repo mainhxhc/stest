@@ -1,0 +1,42 @@
+package task;
+
+import org.openqa.selenium.WebDriver;
+
+
+import elements.PayChoicePage;
+
+//支付方式
+public class Payment {
+	public static void paymentOption(WebDriver dr,String i) throws InterruptedException{
+		try {
+			if(i.equals("z")) { //支付宝
+				PayChoicePage.aliPay(dr).click();//选择支付宝确认付款
+				PayChoicePage.pay(dr).click();//确认付款
+				if(Check.logincheck(dr,"正在使用即时到账交易")){  //检验支付页面跳转成功
+					Alipay.alipayout(dr);//控制台打印支付页面信息	
+				}
+				else {
+					WebDriverWrapper.screenShot(dr, "");  //支付页面跳转不成功截图
+					dr.quit();
+				}				
+			}
+			if(i.equals("c")){ //财付通
+				PayChoicePage.pay(dr).click();//确认付款
+				if(Check.logincheck(dr,"本次交易为即时到账交易")){  //检验支付页面跳转成功
+					Alipay.alipayout(dr);//控制台打印支付页面信息					
+					
+					
+					
+				}
+				else {
+					WebDriverWrapper.screenShot(dr, "");  //支付页面跳转不成功截图
+					dr.quit();
+				}
+			}
+		} catch (Exception e) {
+			WebDriverWrapper.screenShot(dr, "");
+			dr.quit();
+		}
+	}
+
+}

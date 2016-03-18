@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/testdgweb/!svn/ver/1/lib
+END
+testng.jar
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/testdgweb/!svn/ver/1/lib/testng.jar
+END
+selenium-java-2.39.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/testdgweb/!svn/ver/1/lib/selenium-java-2.39.0.jar
+END
+jxl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/testdgweb/!svn/ver/1/lib/jxl.jar
+END
+saxon-8.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/testdgweb/!svn/ver/1/lib/saxon-8.7.jar
+END
+mail.jar
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/testdgweb/!svn/ver/1/lib/mail.jar
+END
+activation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/testdgweb/!svn/ver/1/lib/activation.jar
+END
+commons-email-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/testdgweb/!svn/ver/1/lib/commons-email-1.2.jar
+END
+selenium-server-standalone-2.39.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/testdgweb/!svn/ver/1/lib/selenium-server-standalone-2.39.0.jar
+END
+ojdbc14-10.2.0.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/testdgweb/!svn/ver/1/lib/ojdbc14-10.2.0.3.jar
+END

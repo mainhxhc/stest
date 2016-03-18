@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/testdgweb/!svn/ver/1/test-output/Suite1
+END
+test5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/testdgweb/!svn/ver/1/test-output/Suite1/test5.xml
+END
+test4.html
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/testdgweb/!svn/ver/1/test-output/Suite1/test4.html
+END
+test5.html
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/testdgweb/!svn/ver/1/test-output/Suite1/test5.html
+END
+testng-failed.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/testdgweb/!svn/ver/1/test-output/Suite1/testng-failed.xml
+END
+test4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/testdgweb/!svn/ver/1/test-output/Suite1/test4.xml
+END

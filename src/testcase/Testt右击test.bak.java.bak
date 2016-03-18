@@ -1,0 +1,70 @@
+package testcase;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.interactions.Actions;
+
+import org.testng.annotations.Test;
+
+import task.StartBrower;
+
+
+
+public class Testt {
+	private WebDriver dr;
+	@Test
+	public void test4 () throws InterruptedException, IOException{
+		String url=("http://www.10010fj.cn/login!init.action?flag=0");
+		dr = StartBrower.start(dr,url);	
+		Thread.sleep(6000);
+		
+		
+		Actions action = new Actions(dr) ;
+		
+		action.contextClick(dr.findElement(By.xpath("//*[@id='loginImg']"))).perform(); //选中图标右键test
+		Robot robot;
+		try {
+			robot = new Robot();
+			robot.keyPress(86);//鼠标右击
+			
+		} catch (AWTException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Thread.sleep(1000);
+        try {
+            Runtime.getRuntime().exec("d:\\test.exe");  //autoit的可执行文件完成另存为的操作。
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        
+        Thread.sleep(10000);
+        Runtime.getRuntime().exec("cmd.exe /c start c:\\test.bat");
+        
+        String filePath = "c:\\test.txt";
+//      "res/";
+        String read = Img.readTxtFile(filePath);
+        if (read.equals(null)){
+        	System.out.print("验证码读取失败，关闭浏览器");
+        	 dr.quit();
+        }
+        dr.findElement(By.xpath("//*[@id='mobileNumTwo']")).sendKeys("18650992020");
+        dr.findElement(By.xpath("//*[@id='passwordOne']")).sendKeys("840211");
+        dr.findElement(By.xpath("//*[@id='vfPicOne']")).sendKeys(read);
+        dr.findElement(By.xpath("//*[@id='loginBtn']")).click();
+        Thread.sleep(30000);
+        dr.quit();
+	
+	}
+
+	
+}

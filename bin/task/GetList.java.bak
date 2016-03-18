@@ -1,0 +1,26 @@
+package task;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+
+public class GetList {
+	
+	public static WebElement  divList(WebDriver dr,String goods ) throws InterruptedException {
+		WebElement buy = null;
+		List<WebElement>  div = dr.findElements(By.cssSelector("input[type=checkbox]"));
+		Thread.sleep(3000);
+	    for (int i=1;i<=div.size();i++){
+	    	if(dr.findElement(By.xpath("/html/body/div[7]/div[2]/div[2]/div["+i+"]/div/div[2]/div[1]")).getText().contains(goods)){
+	    		dr.findElement(By.xpath("/html/body/div[7]/div[2]/div[2]/div["+i+"]/div/div[2]/div[4]/input")).click();
+	    		buy = dr.findElement(By.xpath("/html/body/div[7]/div[2]/div[2]/div["+i+"]/div/div[2]/div[3]/a"));
+	    		return buy;
+	    	}
+			
+	}
+		return buy;
+	}
+}

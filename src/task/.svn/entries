@@ -1,0 +1,208 @@
+8
+
+dir
+1
+http://192.168.198.130:9999/svn/testdgweb/src/task
+http://192.168.198.130:9999/svn/testdgweb
+
+
+
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fcef53c4-6d9c-4fc6-b174-f070536cac4a
+
+Alipay.java.bak
+file
+
+
+
+
+2015-04-01T08:07:49.592000Z
+91534426ae96fb377687c01b2561abb5
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+Arelt.java.bak
+file
+
+
+
+
+2015-04-01T08:07:49.451000Z
+45b341b9948d47da401414d80855dde3
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+BrowerAction.java.bak
+file
+
+
+
+
+2015-04-01T08:07:49.646000Z
+db03e45295284d35fb299aa164da73ca
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+Check.java.bak
+file
+
+
+
+
+2015-04-01T08:07:49.585000Z
+e717c4fa78bab4ae1bfedd7e04746e2b
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+GetList.java.bak
+file
+
+
+
+
+2015-04-01T08:07:49.525000Z
+13076e8b7a00a1a5ea04a23e5c4d383d
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+Handle.java.bak
+file
+
+
+
+
+2015-04-01T08:07:49.642000Z
+e490e9bd2a0e96a039237c238c4081bc
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+Login.java.bak
+file
+
+
+
+
+2015-04-01T08:07:49.455000Z
+27310ef871b57e05f96a59aa6cc196db
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+Payment.java.bak (1).bak
+file
+
+http://192.168.198.130:9999/svn/testdgweb/src/task/Payment.java.bak%20(1).bak
+
+
+2015-04-01T08:07:49.528000Z
+076d1d5865d3b8b0067eb28a1e615204
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+Payment.java.bak (2).bak
+file
+
+http://192.168.198.130:9999/svn/testdgweb/src/task/Payment.java.bak%20(2).bak
+
+
+2015-04-01T08:07:49.582000Z
+d3f495a07cada3f6ef3d25258481aaed
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+RightHeader.java.bak
+file
+
+
+
+
+2015-04-01T08:07:49.635000Z
+9f6f985a45ec06eaaf1276f2c332a429
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+Show.java.bak
+file
+
+
+
+
+2015-04-01T08:07:49.595000Z
+2e2966a8ba8ed8f9f388a6b174f2b490
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+StartBrower.java.bak
+file
+
+
+
+
+2015-04-01T08:07:49.588000Z
+1b0fa842df2dd818bb311cd83856efb7
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+Wait.java.bak
+file
+
+
+
+
+2015-04-01T08:07:49.447000Z
+8d13837a6723ef4c78e2fdd8ab5deb40
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+WebDriverWrapper.java.bak
+file
+
+
+
+
+2015-04-01T08:07:49.638000Z
+6e7d9e1d105e2f69673092f77022f748
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+com
+dir
+
+db
+dir
+
+sxdgpageaction
+dir
+
+sxdgtask
+dir
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="148374" started-at="2015-03-12T06:37:07Z" finished-at="2015-03-12T06:39:35Z">
+    <groups>
+    </groups>
+    <test name="test5" duration-ms="148374" started-at="2015-03-12T06:37:07Z" finished-at="2015-03-12T06:39:35Z">
+      <class name="com.sxdg.Ttest">
+        <test-method status="PASS" signature="test4(java.lang.String)[pri:0, instance:com.sxdg.Ttest@28bb0d0d]" name="test4" duration-ms="148365" started-at="2015-03-12T14:37:07Z" finished-at="2015-03-12T14:39:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E:/project/testsxdg2/src/com/ai/excel/Contract.xls]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+      </class> <!-- com.sxdg.Ttest -->
+    </test> <!-- test5 -->
+  </suite> <!-- Suite1 -->
+</testng-results>

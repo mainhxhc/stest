@@ -1,0 +1,102 @@
+package com.sxdg;
+
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
+import javax.imageio.ImageIO;
+
+import methods.Excel;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import testcase.Img;
+
+import com.ai.common.IoAction;
+import com.ai.data.EnumData.BrowerType;
+import com.ai.data.EnumData.ElementType;
+import com.ai.driver.DriverService;
+
+public class Ttest {
+	private String url;
+	private String jsessiond;
+	// private WebDriver dr;
+	private Object[][] array;
+	ElementType et = null;
+	ElementType xpath = ElementType.xpath;
+	ElementType id = ElementType.id;
+	ElementType name = ElementType.name;
+
+	@Parameters({ "url", "jsessiond", "excel" })
+	@Test
+	public void test4(String url, String jsessiond, String excel)
+			throws Exception {
+		// DriverService dr = new DriverService();
+
+		// HomePage.kdxy(dr).click();
+		// array = Excel.readDate(excel);
+		// for (int i = 1; i < array.length + 1; i++) {
+		DriverService dr = new DriverService();
+		// session登录
+		// jsessiond = setjsessiond;
+		// url = seturl;
+		dr.startBrower(BrowerType.CHROME,
+				"http://www.10010fj.cn/wo/broadBand!loginIndex.action");
+		// dr.sessionLogin(seturl,setjsessiond);
+
+		JavascriptExecutor jse = (JavascriptExecutor) dr.getDr();
+		jse.executeScript("document.getElementById('subNav2').style.display = 'block'");
+		jse.executeScript("document.getElementById('subNav1').style.display = 'none'");
+
+		dr.sendKeys(xpath, "//*[@id='subNav2']/div[3]/dl[1]/dd/input",
+				"350102198210034124");
+		dr.sendKeys(xpath, "//*[@id='subNav2']/div[3]/dl[2]/dd/input", "潘池炜");
+		Thread.sleep(6000);
+		System.out.println(dr.getDr()
+				.findElement(By.xpath("//*[@id='div_numSel']")).isDisplayed());
+		dr.click(xpath, "//*[@id='loginBnt']");
+		Thread.sleep(3000);
+		System.out.println(dr.getDr()
+				.findElement(By.xpath("//*[@id='div_numSel']")).isDisplayed());
+		List<WebElement> lists = dr.cssList("radio");
+		for (WebElement list : lists) {
+			if (list.getText().equals("059107501653")) {
+				dr.click(xpath, "//*[@id='div_numSel']/div[2]/div[3]/a");
+				break;
+			}
+		}
+
+		/*
+		 * // 验证码处理 dr.getDr().manage().window().maximize(); String txt =
+		 * dr.elementPicker(
+		 * dr.getDr().findElement(By.xpath("//*[@id='loginImg']")), "src");
+		 * test(dr, txt);
+		 * 
+		 * // 输入识别码 dr.sendKeys(xpath, "//*[@id='loginImg']", txt);
+		 * dr.click(xpath, "//*[@id='loginBnt']"); Thread.sleep(3000);
+		 * 
+		 * 
+		 * }
+		 * 
+		 * private String test(DriverService dr, String txt) throws IOException,
+		 * InterruptedException {
+		 * 
+		 * if (txt != null) {
+		 * 
+		 * return txt; } else { dr.click(xpath, "//*[@id='loginImg']"); String
+		 * txt2 = dr.elementPicker(
+		 * dr.getDr().findElement(By.xpath("//*[@id='loginImg']")), "src"); for
+		 * (int i = 0; i < 3; i++) { test(dr, txt2); } test(dr, txt2); } return
+		 * txt;
+		 */
+	}
+
+}

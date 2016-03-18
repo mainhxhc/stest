@@ -1,0 +1,216 @@
+package com.ai.common;
+
+import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.imageio.ImageIO;
+
+import jxl.Cell;
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.Augmenter;
+
+public class IoAction {
+	// 根据url获取下载文件
+	public static void getimg(String srcurl) throws Exception {
+		// new一个URL对象
+		URL url = new URL(srcurl);
+		// 打开链接
+		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		// 设置请求方式为"GET"
+		conn.setRequestMethod("GET");
+		// 超时响应时间为5秒
+		conn.setConnectTimeout(5 * 1000);
+		// 通过输入流获取图片数据
+
+		InputStream inStream = conn.getInputStream();
+		// 得到图片的二进制数据，以二进制封装得到数据，具有通用性
+		byte[] data = readInputStream(inStream);
+		// new一个文件对象用来保存图片，默认保存当前工程根目录
+		File imageFile = new File("7.jpg");
+		// 创建输出流
+		FileOutputStream outStream = new FileOutputStream(imageFile);
+		// 写入数据
+		outStream.write(data);
+		// 关闭输出流
+		outStream.close();
+	}
+
+	// 保存图片
+	public static byte[] readInputStream(InputStream inStream) throws Exception {
+		ByteArrayOutputStream outStream = new ByteArrayOutputStream();
+		// 创建一个Buffer字符串
+		byte[] buffer = new byte[1024];
+		// 每次读取的字符串长度，如果为-1，代表全部读取完毕
+		int len = 0;
+		// 使用一个输入流从buffer里把数据读取出来
+		while ((len = inStream.read(buffer)) != -1) {
+			// 用输出流往buffer里写入数据，中间参数代表从哪个位置开始读，len代表读取的长度
+			outStream.write(buffer, 0, len);
+		}
+		// 关闭输入流
+		inStream.close();
+		// 把outStream里的数据写入内存
+		return outStream.toByteArray();
+	}
+
+	// 读取文件内容
+	public static String readTxtFile(String filePath) {
+		try {
+
+			String encoding = "GBK";
+			File file = new File(filePath);
+			if (file.isFile() && file.exists()) { // 判断文件是否存在
+				InputStreamReader read = new InputStreamReader(
+						new FileInputStream(file), encoding);// 考虑到编码格式
+				BufferedReader bufferedReader = new BufferedReader(read);
+				String lineTxt = null;
+				while ((lineTxt = bufferedReader.readLine()) != null) {
+
+					System.out.println(lineTxt);
+					return lineTxt;
+				}
+				read.close();
+			} else {
+				System.out.println("找不到指定的文件");
+			}
+		} catch (Exception e) {
+			System.out.println("读取文件内容出错");
+			e.printStackTrace();
+		}
+		return null;
+
+	}
+
+	// 截图webElement图片
+	public static BufferedImage createElementImage(WebDriver driver,
+			WebElement webElement) throws IOException {
+		// 获得webElement的位置和大小。
+		System.out.println("webElement=======" + webElement);
+		Point location = webElement.getLocation();
+		System.out.println("xxxxxxxxxxxx=" + location.getX());
+		System.out.println("xxxxxxxxxxxx=" + location.getY());
+		Dimension size = webElement.getSize();
+		// 创建全屏截图。
+		File scrFile = ((TakesScreenshot) driver)
+				.getScreenshotAs(OutputType.FILE);
+		File screenshot = new File("d:\\zp\\" + "1.png");
+
+		FileUtils.copyFile(scrFile, screenshot);
+		takeScreenshot2(driver);
+		// BufferedImage originalImage = ImageIO.read(new
+		// ByteArrayInputStream(takeScreenshot2(driver)));
+		BufferedImage originalImage2 = ImageIO.read(screenshot);
+		// 截取webElement所在位置的子图。
+		System.out.println(size.getHeight());
+		System.out.println(size.getWidth() - 5);
+		System.out.println(location.getX() + 5);
+		System.out.println(location.getY());
+
+		BufferedImage croppedImage = originalImage2.getSubimage(
+				location.getX() + 5, location.getY(), size.getWidth() - 5,
+				size.getHeight());
+		return croppedImage;
+	}
+
+	// 远程截全屏
+	public static byte[] takeScreenshot(WebDriver driver) throws IOException {
+		WebDriver augmentedDriver = new Augmenter().augment(driver);
+		return ((TakesScreenshot) augmentedDriver)
+				.getScreenshotAs(OutputType.BYTES);
+
+	}
+
+	// 本地截全屏
+	public static byte[] takeScreenshot2(WebDriver driver) throws IOException {
+		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+
+	}
+
+	// 本地截取当前屏幕带时间戳
+	public static void screenShot(WebDriver driver, String desc) {
+
+		Date currentTime = new Date();
+
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss");
+
+		String dateString = formatter.format(currentTime);
+
+		File scrFile = ((TakesScreenshot) driver)
+				.getScreenshotAs(OutputType.FILE);
+
+		try {
+
+			// desc = desc.trim().equals("") ? "" : "-" + desc.trim();
+
+			File screenshot = new File("d:\\zp\\" + dateString + ".png");
+
+			FileUtils.copyFile(scrFile, screenshot);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	// 读取excel文件数据
+	public static Object[][] readExcelDate(String excelName) {
+
+		String filePath = excelName; // xls文件名字o
+		InputStream fs = null;
+		Workbook workBook = null;
+		String[][] array = null;
+		try {
+			fs = new FileInputStream(filePath); // 把文件转成字节
+			workBook = Workbook.getWorkbook(fs); // 获取exle的工作区
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (BiffException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		Sheet[] sheets = workBook.getSheets();
+		for (int n = 0; n < sheets.length; n++) {
+			Sheet sheet = sheets[n];
+			if (sheet.getRows() == 0) {
+				continue;
+			}
+			array = new String[sheet.getRows()][sheet.getColumns()]; // sheet不为空的时候，取出行数和列数
+			Cell cell = null; // excel每个单元格
+			for (int i = 0; i < sheet.getRows(); i++) {
+
+				for (int j = 0; j < sheet.getColumns(); j++) {
+					cell = sheet.getCell(j, i); // getCell 先列后行
+					array[i][j] = cell.getContents();
+
+				}
+
+			}
+
+		}
+		return array;
+
+	}
+}

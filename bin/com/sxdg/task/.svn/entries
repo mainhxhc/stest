@@ -1,0 +1,52 @@
+8
+
+dir
+1
+http://192.168.198.130:9999/svn/testdgweb/src/com/sxdg/task
+http://192.168.198.130:9999/svn/testdgweb
+
+
+
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fcef53c4-6d9c-4fc6-b174-f070536cac4a
+
+Alipay.java
+file
+
+
+
+
+2015-04-01T08:07:50.298000Z
+be738da40891e82c59458124d1bf5d88
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+Paymodes.java
+file
+
+
+
+
+2015-04-01T08:07:50.304000Z
+524ca0db0b6fcea4c188c86afa30e2b5
+2015-03-31T11:18:27.188323Z
+1
+admin
+

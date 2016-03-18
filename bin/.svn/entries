@@ -1,0 +1,43 @@
+8
+
+dir
+1
+http://192.168.198.130:9999/svn/testdgweb/src
+http://192.168.198.130:9999/svn/testdgweb
+
+
+
+2015-03-31T11:18:27.188323Z
+1
+admin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fcef53c4-6d9c-4fc6-b174-f070536cac4a
+
+com
+dir
+
+elements
+dir
+
+methods
+dir
+
+task
+dir
+
+testcase
+dir
+

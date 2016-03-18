@@ -1,0 +1,15 @@
+package task;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+
+public class RightHeader {
+	public static void jselement(WebDriver dr,String elementid) throws InterruptedException{		
+		
+		((JavascriptExecutor)dr).executeScript("document.getElementById('elementid').value=\"²âÊÔ±¸×¢\";");
+		//JavascriptExecutor js = (JavascriptExecutor) ((JavascriptExecutor)dr).executeScript("document.getElementById(elementid)");
+		Thread.sleep(3000);
+		//return js;
+		
+	}
+}
